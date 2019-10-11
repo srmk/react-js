@@ -1,0 +1,200 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+    color: #333 !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 10px;
+    .active {
+        color: aquamarine !important;
+    }
+}
+
+.main-container {
+    overflow: auto;
+    height: 100%;
+    .banner-container {
+        .banner {
+            width: 100%;
+        }
+    }
+
+    .category-container {
+        // padding: 0;
+        margin: 10px 0;
+        margin-bottom: 45px;
+        text-align: center;
+        // cursor: pointer;
+        .category-name {
+            font-size: 25px;
+            color: #000;
+        }
+        .show-category {
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+
+    .items-category {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 100px;
+        .category-list {
+            margin-bottom: 20px;
+            .item-list {
+                justify-content: space-around;
+            }
+            .title-container {
+                margin: 20px 0;
+                display: inline-block;
+                width: 100%;
+                .title {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    color: #000;
+                }
+                .sub-title {
+                    color: #a2a2a2;
+                    font-size: 14px;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 5%;
+                    padding-top: 10px;
+                    border-bottom: 1px solid #153177;
+                    transition: .5s;
+                }
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1199px){
+            width: 90%;
+        }
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            .category-list {
+                .title-container {
+                    margin: 20px;
+                }
+            }
+        }
+    }
+
+    .shop-list-container {
+        margin-bottom: 20px;
+        text-align: center;
+        a {
+            width: 100%;
+        }
+        .item-name {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+}
+
+.error-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px 0;
+}
+
+.dropdown-container {
+    .custom-select {
+        padding: 5px 0;
+        border: none !important;
+        border-bottom: 1px solid !important;
+        border-radius: 0 !important;
+        &:focus {
+            border-color: none !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+.description-container {
+    width: 60%;
+    margin: 30px auto;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    @media screen and (min-width: 992px) and (max-width: 1199px){
+        width: 90%;
+    }
+    @media screen and (max-width: 991px) {
+        width: 100%;
+        .form-area {
+            margin: 0 30px;
+            margin-bottom: 100px;
+            position: relative;
+        }
+    }
+    .item-name {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .item-price {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    .dropdown-container, .item-description {
+        margin-bottom: 25px;
+    }
+}
+
+.cart {
+    cursor: pointer;
+}
+
+// common  
+button {
+    margin: 15px 0px;
+    background: transparent;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    outline: none;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+    &::focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: #000;
+    border: none;
+    outline: none;
+    &:hover {
+        background-color: transparent;
+    }
+} 
