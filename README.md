@@ -1,4 +1,4 @@
-![event list](https://i.ibb.co/HT4SWkn/demo-2.png)
+![event list](https://i.ibb.co/tQ6rwK2/demo-1.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
