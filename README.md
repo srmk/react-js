@@ -1,6 +1,4 @@
-![event list](https://i.ibb.co/FnchgZk/e-shop-ipad.png)
-![event list](https://i.ibb.co/bBySTW6/e-shop-window.png)
-![event list](https://i.ibb.co/RpycQ6c/e-shop-nexus.png)
+![event list](https://i.ibb.co/HT4SWkn/demo-2.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
